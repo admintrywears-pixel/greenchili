@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-urdu: "Jameel Noori Nastaleeq", "Jameel Noori Nastaliq", "Noto Nastaliq Urdu", serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #07170f;
+    color: #f4f7f0;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Unified Noori Nastaliq Urdu Script across all headings, descriptions, nav & buttons */
+.font-urdu {
+  font-family: var(--font-urdu);
+  direction: rtl;
+  unicode-bidi: isolate;
+  line-height: 2.05;
+  letter-spacing: 0 !important;
+}
+
+.font-urdu-body {
+  font-family: var(--font-urdu);
+  direction: rtl;
+  unicode-bidi: isolate;
+  line-height: 1.9;
+  letter-spacing: 0 !important;
+}
+
+.font-urdu-inline {
+  font-family: var(--font-urdu);
+  direction: rtl;
+  unicode-bidi: isolate;
+  line-height: 1.55;
+  letter-spacing: 0 !important;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Custom subtle scrollbar in forest green & lime */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07170f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1d4a31;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #65a30d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

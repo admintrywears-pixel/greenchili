@@ -1,0 +1,6 @@
+{
+  "name": "Green Chilli",
+  "description": "Pakistani 3D interactive handi kitchen & red-chilli-free restaurant featuring local specialties, BBQ, and green-spiced fast food.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
